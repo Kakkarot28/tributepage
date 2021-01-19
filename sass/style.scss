@@ -1,0 +1,28 @@
+@import "variables";
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  color: $primary_color;
+}
+
+body {
+  background: black;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
