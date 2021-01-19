@@ -15,6 +15,7 @@ html {
 
 body {
   background: black;
+  padding-bottom: 8rem;
 }
 
 img {
@@ -25,4 +26,150 @@ img {
 
 a {
   text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+//Starts  Here
+
+header {
+  width: 100%;
+  padding: 1em;
+  text-align: center;
+
+  h1 {
+    font-size: 5rem;
+    padding-top: 1em;
+    letter-spacing: 1px;
+  }
+
+  p {
+    font-size: 1.5rem;
+    padding-top: 0.5em;
+    text-transform: capitalize;
+  }
+}
+
+main {
+  padding: 6em;
+  background: white;
+  color: black;
+
+  figure {
+    padding: 1em;
+  }
+
+  figcaption {
+    text-align: center;
+    font-size: 1.8rem;
+    word-spacing: 1.5px;
+    padding-top: 1em;
+  }
+}
+
+section {
+  width: 60%;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 3em 0;
+    text-align: center;
+  }
+
+  ul {
+    list-style-type: disc;
+    li {
+      display: flex;
+      padding: 2.3rem;
+      font-size: 1.8rem;
+      position: relative;
+
+      strong {
+        font-weight: bold;
+      }
+
+      span {
+        margin: 0 1.3rem;
+      }
+      p {
+        text-transform: capitalize;
+        text-align: justify;
+      }
+    }
+  }
+
+  article {
+    padding: 2em;
+    font-size: 1.8rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    word-spacing: 1.5px;
+    text-transform: capitalize;
+
+    span {
+      padding-top: 1em;
+      display: block;
+    }
+  }
+}
+
+section strong::before {
+  content: " ";
+  position: absolute;
+  top: 28px;
+  left: 1px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $primary_color;
+}
+
+footer {
+  width: 100%;
+  padding: 1em 0;
+  text-align: center;
+  h1 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    word-spacing: 1.5px;
+  }
+
+  a {
+    color: rebeccapurple;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 1.5px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 58.5%;
+  }
+
+  section {
+    width: 70%;
+  }
+}
+
+@media (max-width: 786px) {
+  html {
+    font-size: 55.5%;
+  }
+
+  section {
+    width: 85%;
+  }
 }
