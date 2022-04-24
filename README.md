@@ -2,4 +2,5 @@
 
 Tribute Page project files on Master Branch
 
-apple is red on demo1
+Orange is orange on demo1
+the banana is yellow
